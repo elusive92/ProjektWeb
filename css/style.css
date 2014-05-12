@@ -1,0 +1,69 @@
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'PT Sans Narrow';
+}
+
+.panel h3 {
+  margin-top: 0;
+}
+.panel .panel-body {
+  padding: 20px;
+}
+
+.top-header {
+  height: 100px;
+  padding-top: 25px;
+}
+
+.navbar a.page-title { 
+  font-family: 'PT Sans';
+  font-size: 30px;
+  font-weight: bold;
+  height: auto;
+  color: #059;
+}
+.navbar a.page-title:hover {
+  color: #037;
+}
+
+a.page-title .page-subtitle {
+  font-size: 17px;
+  font-weight: normal;
+  color: #bbb;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+  margin-left: 10px;
+  border-left: #bbb solid 1px;
+}
+
+.navbar .top-nav li a:hover {
+  background: #fcfcfc;
+  color: #047;
+}
+
+.search-catalog {
+  margin-bottom: 10px;
+}
+.search-catalog .clear {
+  margin-bottom: 10px;
+}
+.search-catalog .form-control {
+  width: 280px;
+}
+.search-catalog .radio {
+  margin-right: 5px;
+}
+
+footer {
+  margin: 40px 0;
+  padding: 20px 0;
+  border-top: #eee solid 1px;
+}
+

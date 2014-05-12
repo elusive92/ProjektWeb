@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MusicFolio</title>
+
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-static-top top-header">
+      <div class="container">
+        <div class="navbar-header">
+
+          <a class="navbar-brand page-title" href="/">
+            MusicFolio <span class="page-subtitle">portal dla muzyków</span>
+          </a>
+
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Login" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Hasło" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Zaloguj się</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="navbar navbar-default">
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav top-nav">
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Katalog zespołów</a></li>
+                <li><a href="#">Katalog artystów</a></li>
+                <li><a href="#">Ogłoszenia</a></li>
+                <li><a href="#">Utwory</a></li>
+                <li><a href="#">Zarejestruj się</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+
+          <div class="panel panel-default">
+            <div class="panel-body">
+
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Ogłoszenia</h3>
+                </div>
+                <div class="col-md-8">
+                  <ul class="nav-links">
+                    <li class="active"><a href="#">Zespołów</a></li>
+                    <li><a href="#">Artystów</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <p></p>
+
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Utwory</h3>
+
+              <p></p>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-5">
+
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Szukaj w katalogu</h3>
+              
+              <form class="form-inline search-catalog" action="" method="GET">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="search" checked> szukaj zespołu
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="search"> szukaj artysty
+                  </label>
+                </div><div class="clear"></div>
+
+                <div class="form-group">
+                <input type="text" class="form-control" placeholder="nazwa zespołu...">
+                <button type="submit" class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+                </div>
+              </form>
+
+              <a href="#">zaawansowane szukanie &raquo;</a>
+
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Ostatnio dodane zespoły</h3>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Ostatnio dodani artyści</h3>
+              <p></p>
+            </div>
+          </div>
+
+       </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2014 <b>MusicFolio</b></p>
+      </footer><br><br>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
