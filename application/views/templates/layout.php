@@ -1,4 +1,4 @@
-
+<?php $this->load->helper('image_helper'); ?>
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -8,6 +8,8 @@
 
     <title>MusicFolio</title>
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <link href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 
@@ -30,13 +32,23 @@
         </div>
         <div class="navbar-collapse collapse">
 
-        <?php if(isset($user)): ?>
+        <?php if(isSet($user)): ?>
           <div class="navbar-right">
-            <p><?=$user->nick?></p>
-            <p><a href="/?logout=1">wyloguj</a></p>
+
+            <div class="user-box">
+
+              <div class="thumb">
+                <img src="<?=get_thumb($user->photo)?>" style="max-width:60px;max-height:60px;">
+              </div>
+
+              <p>zalogowany jako: <b class="nick"><?=$user->nick?></b></p>
+              <p>&raquo; <a href="/twoje-konto">twoje konto</a> | <a href="/?logout=1">wyloguj</a></p>
+            </div>
+
           </div>
         <?php else: ?>
-          <form action="/logowanie" method="post" class="navbar-form navbar-right" role="form">
+          <form action="/logowanie" method="post" class="navbar-form navbar-right login-form" role="form">
+            <input type="hidden" name="back_uri" value="<?=$this->uri->uri_string()?>">
             <div class="form-group">
               <input type="text" name="login" placeholder="Login" class="form-control">
             </div>
@@ -86,5 +98,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
   </body>
 </html>
+
+<?php if($this->session->userdata('invalid_login')): ?>
+  <script>
+  $(document).ready(function() {
+    $(document).find('.login-form .form-group').addClass('has-error');
+  });
+  </script>
+  <?php $this->session->unset_userdata('invalid_login'); ?>
+<?php endif; ?>

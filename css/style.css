@@ -67,3 +67,101 @@ footer {
   border-top: #eee solid 1px;
 }
 
+/* user top panel */
+
+.user-box {
+  overflow: hidden;
+  position: relative;
+  min-width: 350px;
+  top: -5px;
+}
+.user-box .thumb {
+  float: left; 
+  width: 60px; 
+  height: 60px;
+  margin-right: 20px;
+  background: transparent;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+.user-box p { 
+  margin: 4px 0; 
+}
+.user-box .nick {
+  color: #059;
+}
+
+/* artist thumb box */
+
+.artist-box {
+  overflow: hidden;
+  background: #f7f7f7;
+  padding: 5px;
+  border-top: #ddd dotted 1px;
+  border-bottom: #ddd dotted 1px;
+  margin-bottom: 5px;
+}
+.artist-box .thumb {
+  float: left; 
+  margin-right: 20px;
+  background: transparent;
+  width: 80px;
+  height: 75px;
+  text-align: center;
+  vertical-align: middle;
+}
+.artist-box p {
+  margin: 4px 0;
+}
+.artist-box .nick a {
+  font-weight: bold;
+  color: #059;
+}
+.artist-box .nick a:hover {
+  color: #27b;
+  text-decoration: none;
+}
+.artist-box .instrument {
+  color: #777;
+}
+.artist-box .place {
+  color: #aaa;
+}
+
+#login_info .label {
+  vertical-align: bottom;
+}
+
+.pagination .current a {
+  background: #eee;
+  color: #777;
+}
+
+.table td {
+  vertical-align: middle !important;
+}
+
+.ad-box {
+  overflow: hidden;
+  background: #f7f7f7;
+  padding: 5px;
+  border-top: #ddd dotted 1px;
+  border-bottom: #ddd dotted 1px;
+  margin-bottom: 5px;
+}
+.ad-box .thumb {
+  float: left; 
+  margin-right: 20px;
+  background: transparent;
+  width: 80px;
+  height: 75px;
+  text-align: center;
+  vertical-align: middle;
+}
+.ad-box p {
+  margin: 4px 0;
+}
+.ad-box .nick a {
+  color: #555;
+}

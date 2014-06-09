@@ -21,8 +21,9 @@ class Logowanie extends CI_Controller {
 
 			}
 			else {
-
-				// invalid data
+				
+				$this->session->set_userdata('invalid_login', true);
+				header("Location: /".$this->input->post('back_uri'));
 
 			}
 
